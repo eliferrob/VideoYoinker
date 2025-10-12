@@ -39,4 +39,4 @@ En algunos casos, los formatos seleccionados pueden no ser compatibles con MP4, 
 3. Copia el ID del formato deseado.
 4. Sustituye el valor de la variable _quantity_ en las líneas 51 o 53 del script por el ID elegido.
 
-De esta manera, el vídeo se descargará con con formato correcto. 😊
+De esta manera, el vídeo se descargará con el formato correcto. 😊
