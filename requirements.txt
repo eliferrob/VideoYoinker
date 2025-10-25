@@ -1,2 +1,1 @@
-ffmpeg
-yt_dlp
+yt-dlp>=2024.10.0
