@@ -13,7 +13,7 @@ class Colors:
     BOLD = '\033[1m'
 
 # Ruta del escritorio del usuario
-desktop_path = os.path.join(os.environ['USERPROFILE'], 'Desktop')
+desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop')
 
 def download_video(url, quality):
     # Configuración mejorada para yt-dlp
