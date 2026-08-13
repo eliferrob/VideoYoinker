@@ -1,50 +1,15 @@
 # VideoYoinker
 
-Script creado en Python que emplea la herramienta **yt-dlp** para descargar vídeos de distintas plataformas multimedia (compatible con más de 1800 sitios web). Ofrece la opción de elegir la calidad del vídeo (1080p, 720p, 480p o la mejor disponible) e incrusta, a su vez, la miniatura.
+Script creado en Python que emplea la herramienta **yt-dlp** para descargar vídeos de distintas plataformas multimedia (¡compatible con más de 1800 sitios web!). Ofrece la opción de elegir la calidad del vídeo (1080p, 720p, 480p o la mejor disponible) e incrusta, a su vez, la miniatura.
 La descarga se hará con la mejor calidad de imagen y sonido en función de la opción seleccionada, y el fichero resultante se guardará en el escritorio del usuario en formato `mp4`.
+
+La versión 'subtitles_and_languages' permite descargar e incrustar distintas pistas de audios y subtítulos si el vídeo los tiene. Ya que el escaneo se demora un poco, he decidido dividirlo en un segundo script para agilizar el proceso y utilizar este solo cuando sea necesario.
 
 ## Requisitos
 
 - Python 3.7+
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp/releases)
 - [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases) (para fusionar audio/vídeo)
-
-### Linux
-
-Debian/Ubuntu:
-
-```bash
-sudo apt update && sudo apt install -y ffmpeg
-pip install --upgrade yt-dlp --break-system-packages
-```
-
-Fedora:
-
-```bash
-sudo dnf install -y ffmpeg
-pip install --upgrade yt-dlp --break-system-packages
-```
-
-Arch:
-
-```bash
-sudo pacman -Sy --noconfirm ffmpeg
-pip install --upgrade yt-dlp
-```
-
-### macOS (con Homebrew):
-
-```bash
-brew install ffmpeg
-pip3 install --upgrade yt-dlp
-```
-
-### Windows (con Winget):
-
-```powershell
-winget install ffmpeg
-pip install --upgrade yt-dlp
-```
 
 ## Instalación
 

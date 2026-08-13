@@ -12,8 +12,8 @@ class Colors:
     RESET = '\033[0m'
     BOLD = '\033[1m'
 
-# Ruta del escritorio del usuario
-desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop')
+# Ruta de la descarga (modifica 'Escritorio' si tu SO está en otro idioma o quieres que se descargen por defecto en otra carpeta)
+desktop_path = os.path.join(os.path.expanduser('~'), 'Escritorio')
 
 def download_video(url, quality):
     # Configuración mejorada para yt-dlp
@@ -83,7 +83,7 @@ def main():
     url = input(f"\n{Colors.BOLD} URL del video:{Colors.RESET} ").strip()
     
     if not url:
-        print("[*] La URL no puede estar vacía.")
+        print(f"{Colors.RED}[*] La URL no puede estar vacía.{Colors.RESET}")
         return
 
     print(f"\n{Colors.BOLD} Selecciona la calidad:{Colors.RESET}")
